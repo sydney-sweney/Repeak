@@ -1,4 +1,5 @@
 import { authState } from './authState.js'
+import defaultImg from '@/assets/svg/main_page/Ha.jpg'
 
 export const authMock = {
     signup: async (payload) => {
@@ -9,13 +10,15 @@ export const authMock = {
     if (exist) {
       throw new Error('Такой email уже зарегистрирован')
     }
-
+    
     const user = {
       id: Date.now(),
       email: payload.email,
       password: payload.password,
       nickname: null,
-      tag: null
+      tag: null,
+      cover: defaultImg,
+      avatar: defaultImg
 
     }
 

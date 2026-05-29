@@ -32,8 +32,8 @@
 
     
         <div class="profile">
-            <img @click="go('/profile')"
-                 src="@/assets/svg/main_page/Ha.jpg" alt="logo" class="avatar" />
+            <div @click="go('/profile')"
+                alt="logo" class="avatar" :style="{ backgroundImage: `url(${authState.currentUser.avatar})` }" />
             <div class="mini_data">
                  <span @click="go('/profile')" class="span_nick">
                     {{ authState.currentUser.nickname }}
@@ -174,7 +174,7 @@
 .profile:hover{
     
    background: rgba(29, 155, 240, 0.1);
-    border-radius: 999px;
+   border-radius: 999px;
 }
 
 
@@ -263,7 +263,8 @@
     border-radius: 30px ;
     height: 56px;
     width: 56px;
-
+    background-size: cover;
+    background-position: center;
     cursor: pointer;
 }
 
