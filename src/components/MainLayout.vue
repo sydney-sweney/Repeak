@@ -256,7 +256,7 @@
     max-width: 150px;       
     white-space: nowrap;     
     overflow: hidden;        
-    text-overflow: ellipsis; /* ... */
+    text-overflow: ellipsis; 
 }
 
 .avatar{
