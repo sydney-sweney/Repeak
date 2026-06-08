@@ -406,7 +406,7 @@
 
     }
     .modal_overlay {
-         position: fixed; /* ВАЖНО */
+         position: fixed; 
          top: 0;
          left: 0;
          width: 100vw;
@@ -416,13 +416,13 @@
          justify-content: center;
          align-items: center;
 
-         background: rgba(0, 0, 0, 0.5); /* затемнение */
-         backdrop-filter: blur(1px); /* БЛЮР */
+         background: rgba(0, 0, 0, 0.5); 
+         backdrop-filter: blur(1px); 
 
-         z-index: 9999; /* чтобы поверх всего */
+         z-index: 9999; 
     }
     .error_modal {
-         position: fixed; /* ВАЖНО */
+         position: fixed; 
          top: 20px;
          left: 50%;
          transform: translateX(-50%);
@@ -433,7 +433,7 @@
         background: #ff4d4f;
         color: white;
 
-        z-index: 10000; /* ВАЖНО: выше чем modal_window */
+        z-index: 10000; 
     }
 
    
