@@ -30,7 +30,7 @@
 
     const emit= defineEmits(['info_profile'])
     const click_submit=()=>{
-        console.log('Работает нахуй потому что сейф ебло нахуй')
+        console.log('Работает ура хапинес')
         emit('info_profile',{
             nickname: nickname.value,
             tag: tag.value
